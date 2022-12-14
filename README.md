@@ -52,9 +52,9 @@ Transactions on acoustics, speech, and signal processing, vol. 32, no. 6, pp. 11
 
 
 Run test.m
-1.  Output enhanced speech files in the audios folder.
-2.  Output plots of spectrograms in the figs folder.
-3.  Output in the matlab command window for F-16 noise (with blind a priori SNR and noise estimation):
+1.  Output enhanced speech files are saved in the audios folder.
+2.  Output plots of spectrograms are saved in the figs folder.
+3.  Output objective metric results are printed in the matlab command window. For instance, the objective results for the F-16 noise condtion, blind a priori SNR and noise estimation:
 
 PESQScores = 
 
