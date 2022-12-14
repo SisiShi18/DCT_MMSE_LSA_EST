@@ -145,8 +145,8 @@ mmse_inputs.gain_min = 0.1;
 %--------------------------------------------------------------------------
 %%             Define speech/noise variance estimation method
 % --------------------------------------------------------------------------
-% xi_type = {'noise_ideal'}; %ideal noise psd estimate
-xi_type = {'DD'}; % Decision-direct a priori SNR estimation
+xi_type = {'noise_ideal'}; %ideal noise psd estimate
+% xi_type = {'DD'}; % Decision-direct a priori SNR estimation
 %--------------------------------------------------------------------------
 %%                 Define speech quality measure types
 %--------------------------------------------------------------------------
