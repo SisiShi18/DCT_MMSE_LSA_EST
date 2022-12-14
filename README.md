@@ -56,7 +56,7 @@ Run test.m
 2.  Output plots of spectrograms are saved in the figs folder.
 3.  Output objective metric results are printed in the matlab command window. For instance, the objective results for the F-16 noise condtion, blind a priori SNR and noise estimation:
 
-PESQScores = 
+PESQScores_5dB_SNR= 
 
   struct with fields:
 
@@ -73,7 +73,7 @@ PESQScores =
     N_PoE_O: 2.7335
     L_PoE_O: 2.7383
 
-PDScores = 
+PDScores_5dB_SNR = 
 
   struct with fields:
 
@@ -90,8 +90,7 @@ PDScores =
     N_PoE_O: 0.2232
     L_PoE_O: 0.2195
 
-
-STOIScores = 
+STOIScores_5dB_SNR = 
 
   struct with fields:
 
@@ -107,3 +106,54 @@ STOIScores =
       L_PoE: 0.8534
     N_PoE_O: 0.8756
     L_PoE_O: 0.8808
+
+PESQScores_10dB_SNR = 
+
+  struct with fields:
+
+      Clean: 4.5000
+      Noisy: 1.9183
+     EM_LSA: 2.7878
+     SG_LSA: 2.7586
+    beta_PC: 2.7452
+     L_STSA: 2.7924
+      N_LSA: 2.8665
+      L_LSA: 2.8424
+      N_PoE: 2.8793
+      L_PoE: 2.8610
+    N_PoE_O: 2.9929
+    L_PoE_O: 2.9662
+
+PDScores_10dB_SNR = 
+
+  struct with fields:
+
+      Clean: 0
+      Noisy: 0.4110
+     EM_LSA: 0.2690
+     SG_LSA: 0.2725
+    beta_PC: 0.2679
+     L_STSA: 0.2665
+      N_LSA: 0.2565
+      L_LSA: 0.2684
+      N_PoE: 0.2441
+      L_PoE: 0.2460
+    N_PoE_O: 0.1485
+    L_PoE_O: 0.1399
+
+STOIScores_10dB_SNR = 
+
+  struct with fields:
+
+      Clean: 1
+      Noisy: 0.8365
+     EM_LSA: 0.8730
+     SG_LSA: 0.8878
+    beta_PC: 0.8701
+     L_STSA: 0.9039
+      N_LSA: 0.8954
+      L_LSA: 0.9044
+      N_PoE: 0.9021
+      L_PoE: 0.9108
+    N_PoE_O: 0.9147
+    L_PoE_O: 0.9220
