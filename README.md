@@ -1,1 +1,109 @@
 # DCT_MMSE_LSA_EST
+
+These are the methods included in the tests:
+
+STSA: short-time Spectral Amplidue
+LSA : Log-STSA
+PoE: Polarity estimator
+
+'EM-LSA'[1], Ephraim and Malah DFT MMSE LSA estimator with Complex Gaussian speech prior;
+
+'SG-LSA'[2], & Hendriks et al. DFT MMSE LSA estimator with Super-Gaussian speech prior;
+            
+'beta-PC'[3], Perceptual Weighted $\beta$-order STSA estimator with Phase Compensation (PC) procedure and Complex Gaussian speech prior;
+
+'L-STSA'[4], proposed, DCT MMSE STSA estimator with Laplacian speech prior; 
+
+'N-LSA', proposed, DCT MMSE LSA estimator with Gaussian speech prior;
+
+'L-LSA', proposed, DCT MMSE LSA estimator with Laplacian speech prior;
+
+'N-PoE', proposed, DCT MMSE LSA estimator with Gaussian speech prior + Blind polarity estimation;
+
+'L-PoE', proposed, DCT MMSE LSA estimator with Laplacian speech prior + ?Blind polarity estimation;
+
+'N-PoE-O', proposed, DCT MMSE LSA estimator with Gaussian speech prior + Oracle polarity estimation;
+
+'N-LSA-O', proposed, DCT MMSE LSA estimator with Laplacian speech prior +Oracle polarity estimation ;
+
+
+Two tests:
+
+1.  The noise psd is estimated as the power of short-time amplitude : |N|^2 
+    
+2.  The noise psd is estimated by using the noise tracker given in [4] and [5]
+
+In both tests, the 'a priori SNR' is estimate using the 'Decision Direct' method in [6]
+
+
+[1] Y. Ephraim and D. Malah, “Speech enhancement using a minimum mean-square error log-spectral amplitude estimator,” IEEE transactions on acoustics, speech, and signal processing, vol. 33, no. 2, pp. 443–445, 1985
+
+[2] R. C. Hendriks, R. Heusdens, and J. Jensen, “Log-spectral magnitude mmse estimators under super-gaussian densities,” in Tenth Annual Conference of the International Speech Communication Association, 2009
+
+[3] N. Saleem, M. I. Khattak, A. Nawaz, F. Umer, and M. K. Ochani, “Perceptually weighted β-order spectral amplitude bayesian estimator for phase compensated speech enhancement,” Applied Acoustics, vol. 178, p. 108007, 2021
+
+[4] S. Shi, K. Paliwal, and A. Busch, “n dct-based mmse estimation of short time spectral amplitude for single-channel speech enhancement,” Applied Acoustics, vol. 202, p. 109134, 2023. [Online]. Available: https://www.sciencedirect.com/science/article/pii/S0003682X22005084
+
+[5] T. Gerkmann and R. C. Hendriks, “Unbiased mmse-based noise power estimation with low complexity and low tracking delay,” IEEE
+Transactions on Audio, Speech, and Language Processing, vol. 20, no. 4, pp. 1383–1393, 2011
+
+[6] Y. Ephraim and D. Malah, “Speech enhancement using a minimum-mean square error short-time spectral amplitude estimator,” IEEE
+Transactions on acoustics, speech, and signal processing, vol. 32, no. 6, pp. 1109–1121, 1984
+
+
+Run test.m
+1.  Output enhanced speech files in the audios folder.
+2.  Output plots of spectrograms in the figs folder.
+3.  Output in the matlab command window for F-16 noise (with blind a priori SNR and noise estimation):
+
+PESQScores = 
+
+  struct with fields:
+
+      Clean: 4.5000
+      Noisy: 1.6231
+     EM_LSA: 2.5596
+     SG_LSA: 2.5235
+    beta_PC: 2.4814
+     L_STSA: 2.4727
+      N_LSA: 2.6059
+      L_LSA: 2.5307
+      N_PoE: 2.5632
+      L_PoE: 2.5677
+    N_PoE_O: 2.7335
+    L_PoE_O: 2.7383
+
+PDScores = 
+
+  struct with fields:
+
+      Clean: 0
+      Noisy: 0.5900
+     EM_LSA: 0.3857
+     SG_LSA: 0.3929
+    beta_PC: 0.3947
+     L_STSA: 0.3679
+      N_LSA: 0.3624
+      L_LSA: 0.3723
+      N_PoE: 0.3452
+      L_PoE: 0.3393
+    N_PoE_O: 0.2232
+    L_PoE_O: 0.2195
+
+
+STOIScores = 
+
+  struct with fields:
+
+      Clean: 1
+      Noisy: 0.7446
+     EM_LSA: 0.8262
+     SG_LSA: 0.8421
+    beta_PC: 0.8193
+     L_STSA: 0.8446
+      N_LSA: 0.8469
+      L_LSA: 0.8523
+      N_PoE: 0.8460
+      L_PoE: 0.8534
+    N_PoE_O: 0.8756
+    L_PoE_O: 0.8808
