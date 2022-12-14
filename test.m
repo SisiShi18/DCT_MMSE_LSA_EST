@@ -48,10 +48,10 @@ fidx = 1; % list 7, '{'FB07_09.wav'}','The dune rose from the edge of the water.
 %--------------------------------------------------------------------------
 % noise_files = dir([aud_dir 'noise_babble' filesep '*.wav']); % path to noise test files.
 % noise_type = [19];
-noise_files = dir([aud_dir 'noise_F_16' filesep '*.wav']); % path to noise test files.
-noise_type = [20];
-% noise_files = dir([aud_dir 'noise_speech' filesep '*.wav']); % path to noise test files.
-% noise_type = [6];
+% noise_files = dir([aud_dir 'noise_F_16' filesep '*.wav']); % path to noise test files.
+% noise_type = [20];
+noise_files = dir([aud_dir 'noise_speech' filesep '*.wav']); % path to noise test files.
+noise_type = [6];
 % noise_files = dir([aud_dir 'noise_white' filesep '*.wav']); % path to noise test files. 
 % noise_type = [3];
 % noise_files = dir([aud_dir 'noise_pink' filesep '*.wav']); % path to noise test files. 
