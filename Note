@@ -55,7 +55,7 @@ Run test.m
 3.  Output objective metric results are printed in the matlab command window. 
 For instance, the objective results for the F-16 noise condtion, blind a priori SNR and noise estimation:
 
-PESQScores = 
+PESQScores_5dB_SNR = 
 
   struct with fields:
 
@@ -72,7 +72,7 @@ PESQScores =
     N_PoE_O: 2.7335
     L_PoE_O: 2.7383
 
-PDScores = 
+PDScores_5dB_SNR = 
 
   struct with fields:
 
@@ -90,7 +90,7 @@ PDScores =
     L_PoE_O: 0.2195
 
 
-STOIScores = 
+STOIScores_5dB_SNR = 
 
   struct with fields:
 
