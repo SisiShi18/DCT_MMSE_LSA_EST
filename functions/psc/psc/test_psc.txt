@@ -1,0 +1,18 @@
+
+      Method     PESQ   SNR
+{Warning: P-file /home/kamil/work/20110320-psc/20110320-psc/pesq.p is older than M-file /home/kamil/work/20110320-psc/20110320-psc/pesq.m.
+/home/kamil/work/20110320-psc/20110320-psc/pesq.p may be obsolete and may need to be regenerated.
+Type "help pcode" for information about generating P-files from M-files.} 
+> In test_psc at 30
+       clean :   4.50   Inf
+       noisy :   1.94  2.14
+       psc_A :   2.04  2.73
+       psc_B :   2.63  8.10
+       psc_C :   2.59  5.04
+
+      Method     PESQ   SNR
+       clean :   4.50   Inf
+       noisy :   1.94  2.14
+       psc_A :   2.04  2.73
+       psc_B :   2.63  8.10
+       psc_C :   2.59  5.04
